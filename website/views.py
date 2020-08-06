@@ -28,10 +28,7 @@ def about(request):
 def service(request):
     return render(request,'service.html',{})
 
-def blog(request):
-    return render(request,'blog.html',{})
-def blog_details(request):
-    return render(request,'blog-details.html',{})
+
 def pricing(request):
     return render(request,'pricing.html',{})
 def appointment(request):
