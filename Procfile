@@ -1,1 +1,1 @@
-web:gunicorn dentist.wsgi --log-pile -
+web:gunicorn dentist.wsgi --log-file -
