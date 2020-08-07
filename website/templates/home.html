@@ -14,7 +14,7 @@
             <div class="col-12">
               <!-- Welcome Text -->
               <div class="welcome-text text-center">
-                <h2 data-animation="fadeInUp" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care</h2>
+                <h2 data-animation="fadeInUp" data-delay="100ms">We Believe Everyone Should Have Easy Access To Great Dental Care and made by ABHISHEK K</h2>
                 <p data-animation="fadeInUp" data-delay="300ms">As a leading industry innovator, Dento is opening up exciting new opportunities for dental professionals, investors, employees & suppliers. Contact us to find out what we have to
                   offer you.</p>
                 <div class="welcome-btn-group">
@@ -336,32 +336,32 @@
         <div class="col-12">
           <!-- Appointment Form -->
           <div class="appointment-form">
-            <form action="{%url 'appointment'%}" method="post">
+            <form  method="post"action="appointment">
               {%csrf_token%}
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <input type="text" name="your-name" class="form-control" placeholder="Your Name" required>
+                    <input type="text" name="your-name" id="your-name" class="form-control" placeholder="Your Name" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <input type="text" name="your-phone" class="form-control" placeholder="Your Phone" required>
+                    <input type="text" name="your-phone" id=" your-phone" class="form-control" placeholder="Your Phone" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <input type="email" name="your-email" class="form-control" placeholder="Your Email" required>
+                    <input type="email" name="your-email" id="your-email" class="form-control" placeholder="Your Email" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <input type="text" name="your-address" class="form-control" placeholder="Your Address">
+                    <input type="text" name="your-address" id="your-address" class="form-control" placeholder="Your Address">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <select name="your-scheldule" class="form-control">
+                    <select name="your-scheldule" id="your-shedule" class="form-control">
                       <option value="first choice appointment time">first choice appointment time</option>
                       <option value="9 AM to 10 AM">9 AM to 10 AM</option>
                       <option value="11 AM to 12 PM">11 AM to 12 PM</option>
@@ -372,7 +372,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-group mb-30">
-                    <select name="your-date" class="form-control">
+                    <select name="your-date" id="your-date" class="form-control">
                       <option value="Choose Your date">Choose Your date</option>
                       <option value="Monday">Monday</option>
                       <option value="Tuesday">Tuesday</option>
@@ -385,7 +385,7 @@
                 </div>
                 <div class="col-12">
                   <div class="form-group mb-30">
-                    <textarea name="your-message" class="form-control" placeholder="Your Message"></textarea>
+                    <textarea name="your-message" id="your-message" class="form-control" placeholder="Your Message"></textarea>
                   </div>
                 </div>
                 <div class="col-12 text-center">
